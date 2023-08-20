@@ -1,0 +1,10 @@
+@keyframes tittleAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  

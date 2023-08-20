@@ -1,0 +1,122 @@
+@import "animation.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+.Container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(45deg, #262626, #3a3a3a);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.Tittle {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    animation: tittleAnimation 3s;
+}
+
+.ContainerInput {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    margin: 20px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+}
+
+.ContainerInput input {
+    background-color: transparent;
+    border: 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+    outline: none;
+    flex: 1;
+}
+
+.ContainerInput input::placeholder {
+    color: #ccc;
+}
+
+.BotaoBuscar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+    color: #fff;
+}
+
+.BotaoBuscar:hover {
+    transform: scale(1.1);
+}
+
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.main h2 {
+    margin: 16px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.main span {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .Tittle {
+        font-size: 2.5rem;
+    }
+
+    .ContainerInput {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .ContainerInput input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .main h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .BotaoBuscar {
+        position: absolute;
+        left: 60%;
+    }
+}
+
+
