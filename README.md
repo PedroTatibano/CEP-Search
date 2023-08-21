@@ -15,7 +15,7 @@ ViaCep
 ##Instruções:
 
 Clone o repositório e instale as dependências com npm install no terminal.
-Inicie o aplicativo com npm start dentro do cd App.js.
+Inicie o aplicativo com npm start.
 Insira um CEP válido e clique em "Buscar" ou pressione "Enter".
 Os detalhes do endereço serão exibidos.
 Observação:
